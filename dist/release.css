@@ -1,0 +1,59 @@
+/* One showroom palette; complete supplier photos without forced enlargement. */
+.catalog-page,.panel-page{background:#e7e2d8;color:#171715}
+.panel-page .stage{background:#ded6c9 url('assets/studio-empty.webp') center/cover;padding:28px;min-height:760px;color:#171715}
+.panel-page .stage:before,.product-object:after{display:none}
+.panel-page .stage-categories{position:static;width:auto;display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}
+.panel-page .stage-categories button{color:#4e4a44;background:#eee8df;border:1px solid #c8bfb0;padding:10px 14px}
+.panel-page .stage-categories button.active{background:#ffe527;color:#171715}
+.panel-page .image-area{height:450px;display:flex;align-items:center;overflow:visible}
+.panel-page .product-object{width:100%;height:100%;max-width:none}
+.panel-page #model-image{width:100%;height:100%;max-height:none;object-fit:contain;transform:none!important;filter:none!important;clip-path:none!important;mix-blend-mode:multiply;mask-image:none!important}
+.panel-page .details{background:#f8f5ee;border:1px solid #d6cdbf;border-radius:18px;margin:12px;padding:30px;color:#171715}
+.panel-page .stage-bottom,.panel-page .metrics{color:#171715}
+.panel-page .component-controls button{background:#eee8df;color:#171715;border:1px solid #bfb5a5}
+.panel-page .stage-bottom p,.panel-page .label,.panel-page .metrics small{color:#57534d}
+.panel-page #hotspots{display:none}
+.catalog-page .card{background:#f4f0e8;border:1px solid #d6cdbf;border-radius:16px;overflow:hidden}
+.catalog-page .card-photo{height:270px;background:#e9e2d7;display:flex;align-items:center;justify-content:center}
+.catalog-page .card-photo img{width:100%;height:100%;padding:20px;object-fit:contain;transform:none!important;filter:none!important;mix-blend-mode:multiply}
+.catalog-page .card h3{font-size:26px;line-height:1.15}
+.catalog-page .card-bottom{flex-wrap:wrap;gap:10px}
+.catalog-page .filters{background:#f4f0e8;border:1px solid #d6cdbf;border-radius:16px}
+button,a,input,select{-webkit-tap-highlight-color:transparent}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #bd8b00;outline-offset:4px}
+#compare-content{overflow:auto;max-width:100%}
+#compare-content table{min-width:560px}
+#compare-content img{width:140px;height:120px;object-fit:contain}
+dialog{max-width:min(760px,calc(100vw - 28px));max-height:85dvh;overflow:auto}
+@media(max-width:800px){
+ .panel-page .workspace{display:block}
+ .panel-page .showroom{padding:0}
+ .panel-page .stage{padding:20px 18px;min-height:0}
+ .panel-page .stage-categories{gap:6px;margin-bottom:16px}
+ .panel-page .stage-categories button{font-size:11px;padding:9px}
+ .panel-page .image-area{height:340px;margin:14px 0;position:relative}
+ .panel-page .image-area #zoom{position:absolute;right:0;bottom:0;background:#f7f2e7;color:#171715}
+ .panel-page .stage-bottom{display:block}
+ .panel-page .stage-bottom p{margin-top:8px;max-width:none}
+ .panel-page .details{margin:12px;padding:24px 20px}
+ .panel-page .details h1{font-size:34px}
+ .panel-page .metrics strong{font-size:24px}
+ .panel-page .metrics small{font-size:10px}
+ .panel-page .component-controls{justify-content:center;gap:6px}
+ .panel-page .component-controls button{padding:10px;font-size:12px}
+ .catalog-page .catalog-layout{display:block}
+ .catalog-page .filters{margin-bottom:20px;padding:20px}
+ .catalog-page .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+ .catalog-page .card-photo{height:190px}
+ .catalog-page .card-photo img{padding:12px}
+ .catalog-page .card-body{padding:14px}
+ .catalog-page .card h3{font-size:21px}
+ .catalog-page .card-specs{gap:8px;font-size:12px}
+ .catalog-page .card-price strong{font-size:18px}
+ .catalog-page .toolbar{flex-wrap:wrap;gap:10px}
+ .catalog-page .toolbar .search{width:100%}
+ .catalog-page .section-head h1{font-size:36px}
+ .home-selection .category-tile{overflow:visible}
+ .home-selection .category-visual{overflow:visible}
+}
+@media(max-width:390px){.catalog-page .grid{grid-template-columns:1fr}.catalog-page .card-photo{height:260px}.panel-page .image-area{height:290px}}
