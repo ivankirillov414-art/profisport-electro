@@ -57,3 +57,55 @@ dialog{max-width:min(760px,calc(100vw - 28px));max-height:85dvh;overflow:auto}
  .home-selection .category-visual{overflow:visible}
 }
 @media(max-width:390px){.catalog-page .grid{grid-template-columns:1fr}.catalog-page .card-photo{height:260px}.panel-page .image-area{height:290px}}
+
+/* Release 18: complete photos and predictable card geometry. */
+.panel-page .image-area{position:relative;min-width:0}
+.panel-page .product-object{position:relative;aspect-ratio:auto;min-width:0}
+.panel-page .image-area #model-image{position:static;inset:auto;display:block;width:100%;height:100%;max-width:100%;object-fit:contain;object-position:center;transform:none!important}
+.panel-page .product-object[data-model]{height:100%}
+.catalog-page .grid{align-items:stretch}
+.catalog-page .card{display:flex;flex-direction:column;min-width:0;min-height:0}
+.catalog-page .card-photo{width:100%;height:280px;flex:none}
+.catalog-page .card-body{flex:1;justify-content:flex-start;padding:22px;gap:0}
+.catalog-page .card h3{min-height:2.3em;margin:8px 0 16px}
+.catalog-page .card-specs{flex-wrap:wrap}
+.catalog-page .card-bottom{margin-top:auto;padding-top:22px}
+.catalog-page .card-price{min-height:50px}
+.catalog-page .card-price strong{display:block;white-space:nowrap;font-variant-numeric:tabular-nums}
+.catalog-page .card-price small{display:block;margin-top:5px}
+.catalog-page .card-arrow{min-height:44px;display:inline-flex;align-items:center}
+.catalog-page .compare-toggle{min-width:44px;min-height:44px;margin-left:auto}
+.home-selection .category-visual{height:65%;padding:8px}
+.home-selection .category-visual img{transform:none!important;filter:none!important;mix-blend-mode:multiply;width:100%;height:100%;object-fit:contain;object-position:center;padding:0}
+.home-selection .category-visual[data-product=xt] img{mix-blend-mode:normal}
+@media(max-width:800px){
+ .catalog-page .card-photo{height:210px}
+ .catalog-page .card-body{padding:16px}
+ .catalog-page .card h3{font-size:21px;min-height:2.3em}
+ .catalog-page .card-bottom{padding-top:18px;gap:8px}
+ .catalog-page .card-price strong{font-size:19px}
+ .catalog-page .card-specs{font-size:12px;gap:10px}
+ .home-selection .category-visual{height:165px;padding:6px}
+ .panel-page .stage-categories{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));overflow:visible}
+ .panel-page .stage-categories button{min-width:0;white-space:normal;min-height:44px;font-size:12px}
+}
+@media(max-width:540px){.catalog-page .grid{grid-template-columns:1fr}.catalog-page .card-photo{height:290px}.catalog-page .card h3{min-height:0;font-size:25px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+
+/* Category thumbnails share transparent assets, a compact layout and full-vehicle framing. */
+.home-selection .category-tile{background:#eae5dd;min-height:270px;overflow:hidden}
+.home-selection .category-visual{height:68%;padding:18px;display:flex;align-items:center;justify-content:center}
+.home-selection .category-visual img{filter:none!important;mix-blend-mode:normal!important;transform:none!important;object-fit:contain!important;padding:0!important;width:100%;height:100%}
+.home-selection .category-visual[data-product=xt] img{padding:0!important}
+@media(max-width:800px){
+ .home-selection .category-tile{grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);min-height:142px}
+ .home-selection .category-copy{padding:18px 10px 18px 16px}
+ .home-selection .category-copy h2{font-size:15px;line-height:1.2;letter-spacing:-.5px}
+ .home-selection .category-copy p{font-size:11px;line-height:1.35;margin-top:8px}
+ .home-selection .category-visual{height:142px;padding:12px 10px 12px 0}
+ /* WISH uses the original supplier vehicle in the same continuous empty room. */
+ .home-page .whole-showroom:has(.precision-hero[data-slide="1"]){height:740px;min-height:740px;background-image:url('assets/studio-empty.webp');background-size:auto 100%;background-position:60% center}
+ .home-page .whole-showroom .precision-hero[data-slide="1"] .slide-product{display:flex!important;position:absolute!important;top:250px!important;bottom:105px!important;left:12px!important;right:12px!important;width:auto!important;height:auto!important;min-height:0!important;max-height:none!important;padding:0!important;align-items:flex-end;justify-content:center}
+ .home-page .whole-showroom .precision-hero[data-slide="1"] .slide-product img{object-fit:contain!important;object-position:center bottom!important;filter:drop-shadow(0 18px 12px #38261638)!important}
+}
+@media(max-width:360px){.home-selection .category-copy h2{font-size:13px}.home-selection .category-copy{padding-left:12px}}
