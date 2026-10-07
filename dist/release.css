@@ -109,3 +109,37 @@ dialog{max-width:min(760px,calc(100vw - 28px));max-height:85dvh;overflow:auto}
  .home-page .whole-showroom .precision-hero[data-slide="1"] .slide-product img{object-fit:contain!important;object-position:center bottom!important;filter:drop-shadow(0 18px 12px #38261638)!important}
 }
 @media(max-width:360px){.home-selection .category-copy h2{font-size:13px}.home-selection .category-copy{padding-left:12px}}
+
+/* Compact information windows, explicit catalog access and grounded showroom vehicle. */
+body.dialog-open{overflow:hidden}
+dialog{width:min(600px,calc(100vw - 32px));padding:32px;border:1px solid #e4ded3;border-radius:20px;max-height:calc(100dvh - 48px);box-shadow:0 24px 90px #21180c40}
+dialog::backdrop{background:#19150f70;backdrop-filter:blur(3px)}
+dialog h2{font-size:27px;line-height:1.15;margin:0 44px 20px 0;letter-spacing:-.7px}
+dialog h2:focus{outline:none}
+dialog p{font-size:15px;line-height:1.6;margin:14px 0}
+.dialog-close{width:44px;height:44px;display:flex;align-items:center;justify-content:center;right:12px;top:12px;border-radius:50%;font-size:24px;color:#38332b;background:#ece7df;border:0;padding:0}
+.dialog-close:focus{outline:none}.dialog-close:focus-visible{outline:2px solid #756449;outline-offset:3px}
+#info-content>a:not(.button){font-size:14px;line-height:1.4;padding:10px 0;text-decoration:underline;text-underline-offset:4px;margin:6px 0}
+.header-tools .catalog-shortcut{display:none;font-size:13px;font-weight:700}
+.home-models{padding:42px 3.4%;background:#f7f5f1}
+.home-models h2{font-size:32px;letter-spacing:-1px;margin:10px 0}
+.home-models .grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.home-models .catalog-all{display:flex;max-width:300px;margin:24px auto 0}
+.whole-showroom .precision-hero[data-slide="1"] .slide-product{position:relative!important;isolation:isolate}
+.whole-showroom .precision-hero[data-slide="1"] .slide-product:before{content:'';position:absolute;bottom:2%;left:7%;right:7%;height:7%;border-radius:50%;background:radial-gradient(ellipse,#24170d70,transparent 70%);filter:blur(7px);z-index:-1;pointer-events:none}
+.whole-showroom .precision-hero[data-slide="1"] .slide-product img{filter:drop-shadow(0 3px 2px #251b1645)!important}
+@media(max-width:800px){
+ .header-tools .catalog-shortcut{display:inline-flex;align-items:center;min-height:44px}
+ .header-tools>a[aria-label="Поиск по каталогу"]{display:none}
+ .header-tools{gap:14px}
+ .home-models{padding:30px 18px}.home-models h2{font-size:27px}
+ .home-models .section-head{align-items:flex-start;gap:14px}.home-models .section-head .button{min-height:44px;font-size:12px;padding:10px 16px;white-space:nowrap}
+ .home-models .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+ .home-models .card-photo{height:180px}.home-models .card-body{padding:14px}.home-models .card h3{font-size:21px;min-height:2.3em}.home-models .card-price strong{font-size:18px}
+ dialog{padding:26px 22px;width:calc(100vw - 28px);max-height:calc(100dvh - 56px);border-radius:18px}
+ dialog h2{font-size:24px;margin-bottom:18px}dialog p{font-size:14px;line-height:1.6}
+ .home-page .whole-showroom:has(.precision-hero[data-slide="1"]){height:700px;min-height:700px;background-position:60% center}
+ .home-page .whole-showroom .precision-hero[data-slide="1"] .slide-product{position:absolute!important;top:235px!important;bottom:78px!important;left:6px!important;right:6px!important}
+ .home-page .whole-showroom .precision-hero[data-slide="1"] .slide-product:before{bottom:0;left:8%;right:8%;height:24px;background:radial-gradient(ellipse,#24170d85,transparent 70%);filter:blur(5px)}
+}
+@media(max-width:540px){.home-models .grid{grid-template-columns:1fr}.home-models .card-photo{height:270px}.home-models .card h3{min-height:0}.home-models .section-head{flex-wrap:wrap}.catalog-page .type-tabs button{min-height:44px}}
