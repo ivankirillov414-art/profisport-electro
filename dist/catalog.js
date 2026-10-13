@@ -16,7 +16,12 @@ const MODELS=[
     "availability": "Наличие уточняется у поставщика",
     "source": "https://www.kugoo-russia.ru/electrosamokaty/kugoo-kirin-g2-max",
     "supplier": "KUGOO Russia",
-    "checkedAt": "05.10.2026"
+    "checkedAt": "05.10.2026",
+    "priceKind": "supplier",
+    "published": true,
+    "sku": "g2",
+    "stockStatus": "unknown",
+    "color": ""
   },
   {
     "id": "m4",
@@ -32,10 +37,16 @@ const MODELS=[
     "brakes": "Дисковые",
     "load": 120,
     "desc": "Самокат с сиденьем и пневматическими колёсами.",
-    "availability": "Наличие уточняется у поставщика",
+    "availability": "В наличии в ProfiSport",
     "source": "https://www.kugoo-russia.ru/electrosamokaty/kugoo-m4-pro-18-ah",
     "supplier": "KUGOO Russia",
-    "checkedAt": "05.10.2026"
+    "checkedAt": "05.10.2026",
+    "priceKind": "supplier",
+    "published": true,
+    "sku": "m4",
+    "stockStatus": "in_stock",
+    "color": "",
+    "stockCheckedAt": "13.10.2026"
   },
   {
     "id": "xt",
@@ -54,7 +65,12 @@ const MODELS=[
     "availability": "Наличие уточняется у поставщика",
     "source": "https://eltreco.ru/catalog/elektrovelosiped_eltreco_xt_850_new/",
     "supplier": "Eltreco",
-    "checkedAt": "05.10.2026"
+    "checkedAt": "05.10.2026",
+    "priceKind": "supplier",
+    "published": true,
+    "sku": "xt",
+    "stockStatus": "unknown",
+    "color": ""
   },
   {
     "id": "v8",
@@ -73,7 +89,12 @@ const MODELS=[
     "availability": "Наличие уточняется у поставщика",
     "source": "https://elektro-vostok.ru/products/minako-v8-pro-100030",
     "supplier": "Восток Импорт",
-    "checkedAt": "05.10.2026"
+    "checkedAt": "05.10.2026",
+    "priceKind": "supplier",
+    "published": true,
+    "sku": "v8",
+    "stockStatus": "unknown",
+    "color": ""
   },
   {
     "id": "m1",
@@ -92,7 +113,12 @@ const MODELS=[
     "availability": "Наличие уточняется у поставщика",
     "source": "https://elektro-vostok.ru/products/minako-m1-pro-100025",
     "supplier": "Восток Импорт",
-    "checkedAt": "05.10.2026"
+    "checkedAt": "05.10.2026",
+    "priceKind": "supplier",
+    "published": true,
+    "sku": "m1",
+    "stockStatus": "unknown",
+    "color": ""
   },
   {
     "id": "c1",
@@ -111,7 +137,12 @@ const MODELS=[
     "availability": "Наличие уточняется у поставщика",
     "source": "https://kugoo-russia.ru/electrosamokaty/kugoo-c1pro",
     "supplier": "KUGOO Russia",
-    "checkedAt": "05.10.2026"
+    "checkedAt": "05.10.2026",
+    "priceKind": "supplier",
+    "published": true,
+    "sku": "c1",
+    "stockStatus": "unknown",
+    "color": ""
   },
   {
     "id": "wish",
@@ -130,7 +161,12 @@ const MODELS=[
     "availability": "Наличие уточняется у поставщика",
     "source": "https://www.kugoo-russia.ru/elektropitbajki/kugoo-wish-01",
     "supplier": "KUGOO Russia",
-    "checkedAt": "05.10.2026"
+    "checkedAt": "05.10.2026",
+    "priceKind": "supplier",
+    "published": true,
+    "sku": "wish",
+    "stockStatus": "unknown",
+    "color": ""
   },
   {
     "id": "hualu",
@@ -148,8 +184,14 @@ const MODELS=[
     "source": "https://e-velosiped.ru/catalog/elektrovelosipedy/hualu-h10-60v-75ah",
     "supplier": "E-Velosiped",
     "type": "Электровелосипед",
-    "availability": "Наличие уточняется у поставщика",
-    "checkedAt": "05.10.2026"
+    "availability": "В наличии в ProfiSport",
+    "checkedAt": "05.10.2026",
+    "priceKind": "supplier",
+    "published": true,
+    "sku": "hualu",
+    "stockStatus": "in_stock",
+    "color": "",
+    "stockCheckedAt": "13.10.2026"
   },
   {
     "id": "acid_e8",
@@ -168,7 +210,12 @@ const MODELS=[
     "supplier": "ВелоДрайв",
     "type": "Электровелосипед",
     "availability": "Наличие уточняется у поставщика",
-    "checkedAt": "05.10.2026"
+    "checkedAt": "05.10.2026",
+    "priceKind": "supplier",
+    "published": true,
+    "sku": "acid_e8",
+    "stockStatus": "unknown",
+    "color": ""
   },
   {
     "id": "acid_force",
@@ -187,7 +234,12 @@ const MODELS=[
     "supplier": "ВелоДрайв",
     "type": "Электровелосипед",
     "availability": "Наличие уточняется у поставщика",
-    "checkedAt": "05.10.2026"
+    "checkedAt": "05.10.2026",
+    "priceKind": "supplier",
+    "published": true,
+    "sku": "acid_force",
+    "stockStatus": "unknown",
+    "color": ""
   },
   {
     "id": "gestalt001",
@@ -205,8 +257,14 @@ const MODELS=[
     "source": "https://e-velosiped.ru/catalog/elektrovelosipedy/gestalt-001",
     "supplier": "E-Velosiped",
     "type": "Электровелосипед",
-    "availability": "Наличие уточняется у поставщика",
-    "checkedAt": "05.10.2026"
+    "availability": "В наличии в ProfiSport",
+    "checkedAt": "05.10.2026",
+    "priceKind": "supplier",
+    "published": true,
+    "sku": "gestalt001",
+    "stockStatus": "in_stock",
+    "color": "",
+    "stockCheckedAt": "13.10.2026"
   },
   {
     "id": "gestalt002",
@@ -225,7 +283,12 @@ const MODELS=[
     "supplier": "E-Velosiped",
     "type": "Электровелосипед",
     "availability": "Наличие уточняется у поставщика",
-    "checkedAt": "05.10.2026"
+    "checkedAt": "05.10.2026",
+    "priceKind": "supplier",
+    "published": true,
+    "sku": "gestalt002",
+    "stockStatus": "unknown",
+    "color": ""
   },
   {
     "id": "gestaltabs01",
@@ -244,7 +307,12 @@ const MODELS=[
     "supplier": "E-Velosiped",
     "type": "Электровелосипед",
     "availability": "Наличие уточняется у поставщика",
-    "checkedAt": "05.10.2026"
+    "checkedAt": "05.10.2026",
+    "priceKind": "supplier",
+    "published": true,
+    "sku": "gestaltabs01",
+    "stockStatus": "unknown",
+    "color": ""
   },
   {
     "id": "gestaltabs02",
@@ -263,7 +331,12 @@ const MODELS=[
     "supplier": "E-Velosiped",
     "type": "Электровелосипед",
     "availability": "Наличие уточняется у поставщика",
-    "checkedAt": "05.10.2026"
+    "checkedAt": "05.10.2026",
+    "priceKind": "supplier",
+    "published": true,
+    "sku": "gestaltabs02",
+    "stockStatus": "unknown",
+    "color": ""
   },
   {
     "id": "gestaltabs03",
@@ -282,7 +355,12 @@ const MODELS=[
     "supplier": "E-Velosiped",
     "type": "Электровелосипед",
     "availability": "Наличие уточняется у поставщика",
-    "checkedAt": "05.10.2026"
+    "checkedAt": "05.10.2026",
+    "priceKind": "supplier",
+    "published": true,
+    "sku": "gestaltabs03",
+    "stockStatus": "unknown",
+    "color": ""
   },
   {
     "id": "v3",
@@ -302,7 +380,12 @@ const MODELS=[
     "source": "https://kugoo.ru/product/kugoo-v3/",
     "supplier": "KUGOO.ru",
     "photo": "assets/v3-kugoo-original.png",
-    "checkedAt": "06.10.2026"
+    "checkedAt": "06.10.2026",
+    "priceKind": "supplier",
+    "published": true,
+    "sku": "v3",
+    "stockStatus": "unknown",
+    "color": ""
   },
   {
     "id": "g3",
@@ -322,7 +405,12 @@ const MODELS=[
     "source": "https://kugoo.eu/products/kukirin-g3-pro",
     "supplier": "KugooEU",
     "photo": "assets/g3-original.jpg",
-    "checkedAt": "06.10.2026"
+    "checkedAt": "06.10.2026",
+    "priceKind": "supplier",
+    "published": true,
+    "sku": "g3",
+    "stockStatus": "unknown",
+    "color": ""
   },
   {
     "id": "g2pro",
@@ -342,7 +430,12 @@ const MODELS=[
     "source": "https://www.kugoo-russia.ru/electrosamokaty/kugookirin-g2pro",
     "supplier": "KUGOO Russia",
     "checkedAt": "07.10.2026",
-    "photo": "assets/g2pro.jpg"
+    "photo": "assets/g2pro.jpg",
+    "priceKind": "supplier",
+    "published": true,
+    "sku": "g2pro",
+    "stockStatus": "unknown",
+    "color": ""
   },
   {
     "id": "m5",
@@ -362,7 +455,12 @@ const MODELS=[
     "source": "https://www.kugoo-russia.ru/electrosamokaty/kugoo-m5",
     "supplier": "KUGOO Russia",
     "checkedAt": "07.10.2026",
-    "photo": "assets/m5.jpg"
+    "photo": "assets/m5.jpg",
+    "priceKind": "supplier",
+    "published": true,
+    "sku": "m5",
+    "stockStatus": "unknown",
+    "color": ""
   },
   {
     "id": "g2promax",
@@ -382,7 +480,12 @@ const MODELS=[
     "source": "https://www.kugoo-russia.ru/electrosamokaty/kugoo-g2-pro-max",
     "supplier": "KUGOO Russia",
     "checkedAt": "07.10.2026",
-    "photo": "assets/g2promax.jpg"
+    "photo": "assets/g2promax.jpg",
+    "priceKind": "supplier",
+    "published": true,
+    "sku": "g2promax",
+    "stockStatus": "unknown",
+    "color": ""
   },
   {
     "id": "l2pro",
@@ -402,7 +505,12 @@ const MODELS=[
     "source": "https://www.kugoo-russia.ru/electrosamokaty/kugoo-l2-pro",
     "supplier": "KUGOO Russia",
     "checkedAt": "07.10.2026",
-    "photo": "assets/l2pro.jpg"
+    "photo": "assets/l2pro.jpg",
+    "priceKind": "supplier",
+    "published": true,
+    "sku": "l2pro",
+    "stockStatus": "unknown",
+    "color": ""
   },
   {
     "id": "lx10pro",
@@ -422,7 +530,12 @@ const MODELS=[
     "source": "https://www.kugoo-russia.ru/electrosamokaty/kugoo-lx-10-pro",
     "supplier": "KUGOO Russia",
     "checkedAt": "07.10.2026",
-    "photo": "assets/lx10pro.jpg"
+    "photo": "assets/lx10pro.jpg",
+    "priceKind": "supplier",
+    "published": true,
+    "sku": "lx10pro",
+    "stockStatus": "unknown",
+    "color": ""
   },
   {
     "id": "wish02",
@@ -442,7 +555,12 @@ const MODELS=[
     "source": "https://www.kugoo-russia.ru/elektropitbajki/kugoo-wish-02",
     "supplier": "KUGOO Russia",
     "checkedAt": "07.10.2026",
-    "photo": "assets/wish02.jpg"
+    "photo": "assets/wish02.jpg",
+    "priceKind": "supplier",
+    "published": true,
+    "sku": "wish02",
+    "stockStatus": "unknown",
+    "color": ""
   },
   {
     "id": "v1",
@@ -462,7 +580,12 @@ const MODELS=[
     "source": "https://www.kugoo-russia.ru/electrobikes/kugoo-v1",
     "supplier": "KUGOO Russia",
     "checkedAt": "07.10.2026",
-    "photo": "assets/v1.jpg"
+    "photo": "assets/v1.jpg",
+    "priceKind": "supplier",
+    "published": true,
+    "sku": "v1",
+    "stockStatus": "unknown",
+    "color": ""
   },
   {
     "id": "v1pro",
@@ -482,7 +605,40 @@ const MODELS=[
     "source": "https://www.kugoo-russia.ru/electrobikes/kugoo-kirin-v1-pro",
     "supplier": "KUGOO Russia",
     "checkedAt": "07.10.2026",
-    "photo": "assets/v1pro.jpg"
+    "photo": "assets/v1pro.jpg",
+    "priceKind": "supplier",
+    "published": true,
+    "sku": "v1pro",
+    "stockStatus": "unknown",
+    "color": ""
+  },
+  {
+    "id": "sk8",
+    "sku": "SK 8",
+    "brand": "",
+    "name": "SK 8",
+    "price": 30000,
+    "priceKind": "shop",
+    "published": true,
+    "stockStatus": "in_stock",
+    "availability": "В наличии в ProfiSport",
+    "color": "",
+    "type": "Электросамокат",
+    "range": null,
+    "power": null,
+    "weight": null,
+    "load": null,
+    "battery": "Уточняется",
+    "wheels": "Уточняется",
+    "brakes": "Уточняется",
+    "desc": "",
+    "source": "",
+    "supplier": "",
+    "checkedAt": "13.10.2026",
+    "photo": "assets/no-photo.svg"
   }
 ];
 window.ProfiSportModelCatalog=MODELS;
+window.ProfiSportCatalogReady=(async()=>{
+ try { const r=await fetch("api/catalog.php",{cache:"no-store"}); if(!r.ok)return; const j=await r.json(); if(j.ok&&Array.isArray(j.items)){MODELS.splice(0,MODELS.length,...j.items);}}catch{}
+})();

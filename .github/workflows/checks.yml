@@ -1,0 +1,16 @@
+name: Electro catalog and admin checks
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          node --check dist/app.js
+          node --check dist/catalog.js
+          node --check dist/admin/admin.js
+          find server dist/api -name '*.php' -print0 | xargs -0 -n1 php -l
+          python3 tests/admin-smoke.py
