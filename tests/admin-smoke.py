@@ -4,7 +4,7 @@ with tempfile.TemporaryDirectory() as temp:
  temp=pathlib.Path(temp);pub=temp/'public';server=temp/'server';data=temp/'data';data.mkdir()
  shutil.copytree(root/'dist',pub);shutil.copytree(root/'server',server)
  hash=subprocess.check_output(['php','-r',"echo password_hash('test-only-password',PASSWORD_DEFAULT);"],text=True)
- (server/'config.php').write_text("<?php return ['data_dir'=>"+json.dumps(str(data))+",'admin_login'=>'staff','admin_password_hash'=>"+json.dumps(hash)+"]; ")
+ (server/'config.php').write_text("<?php return ['data_dir'=>"+repr(str(data))+",'admin_login'=>'staff','admin_password_hash'=>"+repr(hash)+"]; ")
  proc=subprocess.Popen(['php','-S','127.0.0.1:18765','-t',str(pub)],stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
  base='http://127.0.0.1:18765/api/';jar=http.cookiejar.CookieJar();client=urllib.request.build_opener(urllib.request.HTTPCookieProcessor(jar))
  def call(path,body=None,token=None):
